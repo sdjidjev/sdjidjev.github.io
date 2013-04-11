@@ -1,0 +1,156 @@
+
+#container{
+	width: 75%;
+	float: right;
+}
+
+.name{
+	font-family:"Verdana";
+	color:brown;
+	font-size: 60;
+	border: 2px solid white;
+}
+body{
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.words{
+	font-family: "Verdana";
+	font-size: 10px;
+}
+
+#profile{
+	position:absolute;
+	left: 30%;
+}
+
+#picturecontainer{
+	width: 210px;
+}
+
+#myName{
+	font-family: "Verdana";
+	color: brown;
+	font-size: 50;
+	background-color: white;
+	width: 900px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	float: center;
+	text-align: right;
+}
+}
+#header{
+	float:left;
+	color: brown;
+	background-color: white;
+	margin: 5;	
+}
+
+#table{
+
+}
+
+#description{
+	background-color: white;
+	padding: 10px;
+	width:58%;
+	height:30px;
+	font-family: "Verdana";
+	font-size: 13px;
+	text-align: right;
+}
+
+#menu {
+	background-color: white;
+	width: 60%;
+	float: right;
+	margin-top: 10px;
+	margin-right: 65px;
+	position: relative;
+	vertical-align: center;
+}
+
+#aboutme{
+
+	background-color: white;
+	width: 60%;
+	float: right;
+	margin-top: 10px;
+	margin-right: 65px;
+	position: relative;
+	padding: 10px;
+}
+
+#buttons{
+	position: absolute;
+	top: 24%;
+	left: 37%;
+	background-color:white;
+	width: 55%;
+	float: right;
+}
+
+li{
+	position:relative;
+    background: white;
+    font-family: 'Verdana';
+    width: 170px;
+    height: 40px;
+    font-size: 17;
+    vertical-align: center;
+    border: 1px solid white;
+}
+
+li:hover{
+	background: #C8C8C8 ;
+	border: 1px solid white;
+}
+#menutext{
+	font-family: "Verdana";
+	text-align: center;
+
+}
+
+#hometext{
+	font-family: Verdana;
+	font-size: 18;
+}
+
+.emailbutton{
+	position:relative;
+	float: left;
+    background: white;
+    font-family: 'Verdana';
+    width: 300px;
+    height: 40px;
+    font-size: 17;
+    vertical-align: center;
+    border: 1px solid white;
+}
+
+.emailbutton:hover
+{
+	background: #C8C8C8;
+}
+
+.homebutton{
+	position:relative;
+	float: left;
+    background: white;
+    font-family: 'Verdana';
+    width: 120px;
+    height: 40px;
+    font-size: 17;
+    vertical-align: center;
+    border: 1px solid white;
+}
+
+.homebutton:hover
+{
+	background: #C8C8C8 ;
+}
+
+a:link {text-decoration:none; color: black;}
+a:visited {text-decoration:none; color: black;}
