@@ -1,9 +1,5 @@
 h1{
-<<<<<<< HEAD
-	font-family: 'Merriweather Sans', sans-serif;
-=======
   font-family: 'Merriweather Sans', sans-serif;
->>>>>>> c6f383956063f11a9dc7b80893ede40d4c8ef940
 	font-size: 35px;
 	padding: 20px;
 	margin-bottom: 20px;
@@ -110,8 +106,4 @@ a:hover
 
 }
 a:link {text-decoration:none}
-<<<<<<< HEAD
 a:visited {text-decoration:none}
-=======
-a:visited {text-decoration:none}
->>>>>>> c6f383956063f11a9dc7b80893ede40d4c8ef940
