@@ -83,10 +83,10 @@ h5{
 	margin: 20px;
 }
 
-.picturelink{
-
+a.picturelink{
+background-color: pink;
 }
-.picturelink:hover{
+a.picturelink:hover{
 	background-color: pink;
 }
 
@@ -100,10 +100,16 @@ h5{
 }
 a:hover
 {
+	width:1px;
 	background-color: red;
 	color: pink;
 	width:900px;
 
 }
+img{
+	border:5px solid;
+	transition:all .1s ease-in;
+}
+img:hover{border:5px solid red;}
 a:link {text-decoration:none}
 a:visited {text-decoration:none}
