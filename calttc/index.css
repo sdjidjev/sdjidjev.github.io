@@ -9,7 +9,7 @@
 }
 
 #menu{
-	padding: 0px;
+	padding-bottom: 5px;
 	margin: 0px;
 	-webkit-margin-before: 0px;
 	-webkit-margin-after: 0px;
@@ -17,9 +17,13 @@
 }
 
 #logo{
-	padding-bottom: 30px;
 	font-family: 'Lily Script One', cursive;
-	font-size: 50px;
+	font-size: 55px;
+}
+
+#logodiv{
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 #navbar{
@@ -32,21 +36,23 @@
 }
 
 .gradient{
+	left:0px;
+	width:100%;
+	position:fixed;
 	padding: 0px;
 	margin: 0px;
 	height: 10px;
 	background: url(images/linear_bg_2.png);
 	background-repeat: repeat-x;
-	background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000066), to(transparent ));
-	background: -webkit-linear-gradient(top, #000066,transparent); linear-
-	background: -moz-linear-gradient(top, #000066,transparent ); 
-	background: -ms-linear-gradient(top, #000066, transparent); 
-	background: -o-linear-gradient(top, #000066, transparent ); 
+	background -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000066), to(#000044));
+	background: -webkit-linear-gradient(top, #000066,#000044); linear-
+	background: -moz-linear-gradient(top, #000066,#000044); 
+	background: -ms-linear-gradient(top, #000066, #000044); 
+	background: -o-linear-gradient(top, #000066, #000044); 
 }
 body{
-	background-color:#F0F0F0;
+	background-color:#E8E8E8 ;
 }
-
 a{
 	color: #FFCC00;
 	transition:all .1s ease-in;
