@@ -4,11 +4,10 @@
 	font-size: 24px;
 	padding-left: 1%;
 	padding-right: 1%;
-	background-color: #000066;
 
 }
 
-#menu{
+.menu{
 	padding-bottom: 5px;
 	margin: 0px;
 	-webkit-margin-before: 0px;
@@ -16,30 +15,31 @@
 	background-color: #000066;
 }
 
-#logo{
-	font-family: 'Lily Script One', cursive;
-	font-size: 55px;
-}
-
-#logodiv{
-	padding-top: 10px;
+.logodiv{
+	width: 100%;
 	padding-bottom: 10px;
 }
 
-#navbar{
-	position: fixed;
+h1{
+	font-family: 'Lily Script One', cursive;
+	font-size: 55px;
+	font-weight: 400;
+}
+
+.navbar{
+	float: center;
 	top: 0;
 	left: 0;
 	width:100%;
 	background-color: #000066;
 	margin: 0px;
+	z-index: 1;
 }
 
 .shadow{
+	float: center;
 	left:0px;
 	width:100%;
-	position:fixed;
-	position: relative;
 	padding: 0px;
 	margin: 0px;
 	height: 20px;
@@ -57,29 +57,28 @@ background-image: -webkit-gradient(
 	color-stop(0.91, #01012B)
 );
 }
-#gradient{
-	left:0px;
-	width:100%;
-	position:fixed;
-	padding: 0px;
-	margin: 0px;
-	height: 10px;
-	background-image: linear-gradient(top, #A5A5A5 17%, #B5B5B5 59%, #E8E8E8 89%);
-	background-image: -o-linear-gradient(top, #A5A5A5 17%, #B5B5B5 59%, #E8E8E8 89%);
-	background-image: -moz-linear-gradient(top, #A5A5A5 17%, #B5B5B5 59%, #E8E8E8 89%);
-	background-image: -webkit-linear-gradient(top, #A5A5A5 17%, #B5B5B5 59%, #E8E8E8 89%);
-	background-image: -ms-linear-gradient(top, #A5A5A5 17%, #B5B5B5 59%, #E8E8E8 89%);
 
-background-image: -webkit-gradient(
-	linear,
-	left top,
-	left bottom,
-	color-stop(0.17, #A5A5A5),
-	color-stop(0.59, #B5B5B5),
-	color-stop(0.89, #E8E8E8)
-);
+h2{
+	font-family: 'Cabin Condensed', sans-serif; 
+	font-weight: 400;
+	font-size: 18px;
+	padding-left: 1%;
+	padding-right: 1%;
+
 }
+
+.content{
+	position: relative;
+	width:60%;
+	background-color: white;
+	z-index: 2;
+}
+
 body{
+	top: 0;
+	left: 0;
+	width: 100%;
+	position: absolute;
 	background-color:#E8E8E8 ;
 }
 a{
