@@ -27,6 +27,7 @@ h1{
 }
 
 .navbar{
+	position: fixed;
 	float: center;
 	top: 0;
 	left: 0;
@@ -68,7 +69,11 @@ h2{
 }
 
 .content{
+	text-align: center;
 	position: relative;
+	top:150px;
+	float: center;
+	margin-top: 80px;
 	width:60%;
 	background-color: white;
 	z-index: 2;
