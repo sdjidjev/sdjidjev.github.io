@@ -10,6 +10,26 @@
 		<title>Cal Table Tennis Club</title>
 	</head>
 	<body>
+		<script>
+			var memberarray = {
+				"steph": "stephdescription",
+				"sylvan": "sylvandescription"
+			};
+			function pullUpUserBio(name){
+				var x = document.getElementById("userpic");
+				//x.innerHTML = image
+				var pic = document.getElementById(name).src;
+				var y = document.getElementById("description");
+				y.style.border= "2px solid #000066";
+				y.style.width = "60%";
+				y.style.padding = "10px";
+				y.style.position = "absolute";
+				y.style.top = "0px";
+				document.getElementById("userinfo").style.height = "500px"
+				x.innerHTML = "<img src = "+pic+" height = '400px'></img>";
+				y.innerHTML = memberarray[name];
+			}
+		</script>
 		<div align = center>
 			<div class = "navbar" position = fixed>
 				<div class = "logodiv">
@@ -28,11 +48,18 @@
 			<div align = center>
 				<div class = "content">
 					<h2>
-						ABOUT
+						OFFICERS
 						<hr>
 					</h2>
 					<h3>
-						&nbsp;&nbsp;&nbsp;The goal of Cal Table Tennis has always been to instill that sense of love and passion for table tennis in the hearts of people all over the world. We compete in tournaments, teach hobos how to play ping pong, and wrestle large mammals. We may not look like much, but we really pack a punch. The only reason I put so much content here is to see if the scrolling thing with the navigation bar works. This club has always strived to make this page long enough to see the scrolling action. Anyways, Jasmine and Sylvan, give me the content and I can put it in the code so it appears here! Either that or I can teach you how to edit the code yourselves. Either way, it's pretty simple to do/learn. You might have to install software or whatever. I'm not sure if you guys want more sections here.... BTW, should we have a FAQ or what? What else do people put on a homepage? When I looked at the badminton page, it seems like they put almost everything there: calendars, mission statements, upcoming events, blog....it's up to you guys. I'm sure anything will be fine! So yeah, if you guys have any ideas for more sections, I'm all ears! Ooh, I think I want to try developing the members page....should be pretty fun.
+						<div id = "userpic">
+						</div>
+						<div id = "description">
+						</div>
+
+
+						<img class = "memberpicture" id = "sylvan" src = "http://upload.wikimedia.org/wikipedia/en/2/25/Baloo_the_bear.jpg" width='200px' onclick = "pullUpUserBio('sylvan')"></img>
+						<img class = "memberpicture" id = "steph" src = "http://upload.wikimedia.org/wikipedia/en/1/10/Winniethepooh.png" width = '200px' onclick = "pullUpUserBio('steph')"></img>
 
 					</h3>
 				</div>

@@ -18,7 +18,9 @@
 .logodiv{
 	width: 100%;
 }
-
+h4{
+	font-size: 18px;
+}
 h1{
 	font-family: 'Lily Script One', cursive;
 	font-size: 55px;
@@ -87,6 +89,22 @@ h2{
 	width:60%;
 	z-index: 1;
 	background-color: #F2F2F2;
+}
+
+#description{
+	background: white;
+	margin: 20px;
+}
+
+.memberpicture{
+	margin: 10px;
+	opacity:0.6;
+	filter:alpha(opacity=60);
+}
+.memberpicture:hover{
+	cursor:pointer;
+	opacity:1.0;
+	filter:alpha(opacity=100);
 }
 
 body{
