@@ -10,26 +10,6 @@
 		<title>Cal Table Tennis Club</title>
 	</head>
 	<body>
-		<script>
-			var memberarray = {
-				"steph": "My name is Stephanie! Here is my bio. I've got great characteristics. I am Winnie the Pooh.",
-				"sylvan": "My name is Sylvan! Here is my bio. I've got great characteristics. I am Baloo the bear."
-			};
-			function pullUpUserBio(name){
-				var x = document.getElementById("userpic");
-				//x.innerHTML = image
-				var pic = document.getElementById(name).src;
-				var y = document.getElementById("description");
-				x.style.width = "50%";
-				y.style.border= "2px solid #000066";
-				y.style.padding = "10px";
-				x.style.display = "inline";
-				y.style.display = "inline";
-				y.style.position = "absolute";
-				x.innerHTML = "<img src = "+pic+" height = '400px'></img>";
-				y.innerHTML = memberarray[name];
-			}
-		</script>
 		<div align = center>
 			<div class = "navbar" position = fixed>
 				<div class = "logodiv">
@@ -48,22 +28,21 @@
 			<div align = center>
 				<div class = "content">
 					<h2>
-						OFFICERS
-						<hr>
+							MEMBERS
+							<hr>
 					</h2>
-					<h3>
-						<div>
-							<div id = "userpic">
+					<div align = center>
+						<div id = "user">
+							<div class = "memberpicturebox">
+								<img class = "memberpicture" src = "http://i.imgur.com/wn0Bgwp.jpg"></img>
 							</div>
-							<div id = "description">
+							<div class = "description">
+								<h3>	
+									Helllloooo gorgeous
+								</h3>
 							</div>
 						</div>
-
-
-						<img class = "memberpicture" id = "sylvan" src = "http://upload.wikimedia.org/wikipedia/en/2/25/Baloo_the_bear.jpg" width='200px' onclick = "pullUpUserBio('sylvan')"></img>
-						<img class = "memberpicture" id = "steph" src = "http://upload.wikimedia.org/wikipedia/en/1/10/Winniethepooh.png" width = '200px' onclick = "pullUpUserBio('steph')"></img>
-
-					</h3>
+					</div>
 				</div>
 			</div>
 		</div>
