@@ -71,7 +71,7 @@ h2{
 }
  h3{
  	font-family: 'Roboto Condensed', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 20px;
 	padding-top: 0px;
 	-webkit-margin-before: 0px;
@@ -95,19 +95,19 @@ h2{
 }
 
 .description{
-	width: 50%;
-	display: inline-block;
-]}
+	margin-left: 220px;
+}
 
 .memberpicture{
 	width:200px;
 }
 
 .memberpicturebox{
-	display: inline-block;
+	float: left;
 }
 
 #user {
+	display: inline-block;
 	text-align: left;
 	padding: 10px;
 	width : 80%;
