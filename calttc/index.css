@@ -146,6 +146,7 @@ body{
 }
 a{
 	color: #FFCC00;
+	-moz-transition: all .2s ease-in;
 	transition:all .2s ease-in;
 }
 a:hover{}
