@@ -71,7 +71,7 @@ h2{
 }
  h3{
  	font-family: 'Lato', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 20px;
 	padding-top: 0px;
 	-webkit-margin-before: 0px;
@@ -120,6 +120,15 @@ body{
 	top: 0;
 	left: 0;
 	background-color:#E8E8E8 ;
+}
+
+#textlink{
+	color: #0000FF;
+	font-weight: 400;
+}
+
+#textlink:hover{
+		text-decoration: underline;
 }
 a{
 	color: #FFCC00;
