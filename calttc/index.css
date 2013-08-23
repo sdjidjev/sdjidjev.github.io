@@ -1,10 +1,17 @@
-#menubuttons{
+.menubuttons{
 	font-family: 'Cabin Condensed', sans-serif; 
 	font-weight: 700;
 	font-size: 24px;
 	padding-left: 1%;
 	padding-right: 1%;
+	margin-left:-4px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 
+}
+
+#selectedbutton{
+	background-color: #003;
 }
 
 .menu{
@@ -122,7 +129,9 @@ body{
 	left: 0;
 	background-color:#ddd ;
 }
-
+.logobutton:hover{
+	background: #006;
+}
 #textlink{
 	color: #0000FF;
 	font-weight: 400;
@@ -133,9 +142,9 @@ body{
 }
 a{
 	color: #FFCC00;
-	transition:all .1s ease-in;
+	transition:all .2s ease-in;
 }
-a:hover{color:#FFFF99; }
+a:hover{background-color: #003}
 a:link {text-decoration:none}
 a:visited {text-decoration:none}
 ::selection
