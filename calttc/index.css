@@ -134,6 +134,8 @@ body{
 .logobutton:hover{
 	background: #006;
 }
+#quicklinks{
+	padding-bottom: 3em;}
 #textlink{
 	color: #0000FF;
 	font-weight: 400;
