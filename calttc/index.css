@@ -71,7 +71,7 @@ h2{
 	color: #222;
 }
  h3{
- 	font-family: 'Lato', sans-serif;
+ 	font-family: 'Droid Sans', sans-serif;
 	font-weight: 400;
 	font-size: 20px;
 	padding-top: 0px;
@@ -83,7 +83,6 @@ h2{
 .content{
 	padding-left:3%;
 	padding-right: 3%;
-	border: solid 2px #000066;
 	text-align: left;
 	position: relative;
 	top:150px;
