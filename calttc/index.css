@@ -10,6 +10,8 @@
 
 }
 
+.menubuttons:hover{background-color: #003}
+
 #selectedbutton{
 	background-color: #003;
 }
@@ -144,7 +146,7 @@ a{
 	color: #FFCC00;
 	transition:all .2s ease-in;
 }
-a:hover{background-color: #003}
+a:hover{}
 a:link {text-decoration:none}
 a:visited {text-decoration:none}
 ::selection
