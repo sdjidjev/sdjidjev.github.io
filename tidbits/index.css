@@ -97,20 +97,6 @@ h5{
 	margin: 20px;
 }
 
-#keyboardtitle{
-	text-align:left;
-	display: block;
-	color: #A98383;
-	font-size: 55px;
-}
-
-.tutorialdescription{
-	text-align: center;
-	width:50%;
-	float:center;
-	position: relative;
-}
-
 a.picturelink{
 background-color: pink;
 }
