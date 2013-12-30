@@ -1,0 +1,162 @@
+.menubuttons{
+	font-family: 'Cabin Condensed', sans-serif; 
+	font-weight: 700;
+	font-size: 24px;
+	padding-left: 1%;
+	padding-right: 1%;
+	margin-left:-4px;
+	padding-top: 1em;
+	padding-bottom: 1em;
+
+}
+
+.menubuttons:hover{background-color: #003}
+
+#selectedbutton{
+	background-color: #003;
+}
+
+.menu{
+	padding-bottom: 5px;
+	margin: 0px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	background-color: #000066;
+}
+
+.logodiv{
+	width: 100%;
+}
+h4{
+	font-size: 18px;
+}
+h1{
+	font-family: 'Lily Script One', cursive;
+	font-size: 55px;
+	font-weight: 400;
+}
+
+.navbar{
+	width: 100%;
+	position: fixed;
+	float: center;
+	top: 0;
+	left: 0;
+	background-color: #000066;
+	margin: 0px;
+	z-index: 2;
+}
+
+.shadow{
+	float: center;
+	left:0px;
+	width:100%;
+	padding: 0px;
+	margin: 0px;
+	height: 20px;
+	background-image: linear-gradient(top, #000066 43%, #01012B 91%);
+	background-image: -o-linear-gradient(top, #000066 43%, #01012B 91%);
+	background-image: -moz-linear-gradient(top, #000066 43%, #01012B 91%);
+	background-image: -webkit-linear-gradient(top, #000066 43%, #01012B 91%);
+	background-image: -ms-linear-gradient(top, #000066 43%, #01012B 91%);
+
+background-image: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0.43, #000066),
+	color-stop(0.91, #01012B)
+	);
+}
+
+h2{
+	font-family: 'Cabin Condensed', sans-serif; 
+	font-weight: 700;
+	font-size: 35px;
+	padding:3%;
+	padding-bottom: 0px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	color: #222;
+}
+ h3{
+ 	font-family: 'Droid Sans', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	padding-top: 0px;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	color: #222;
+ }
+
+.content{
+	padding-left:3%;
+	padding-right: 3%;
+	text-align: left;
+	position: relative;
+	top:150px;
+	float: center;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	padding-bottom: 40px;
+	width:60%;
+	z-index: 1;
+	background-color: #EEE;
+}
+
+.description{
+	margin-left: 220px;
+}
+
+.memberpicture{
+	width:200px;
+}
+
+.memberpicturebox{
+	float: left;
+}
+
+#user {
+	display: inline-block;
+	text-align: left;
+	padding: 10px;
+	width : 80%;
+	background-color: #F8F8F8;
+	margin: 10px;
+
+}
+
+body{
+	top: 0;
+	left: 0;
+	background-color:#ddd ;
+}
+.logobutton:hover{
+	background: #006;
+}
+#quicklinks{
+	padding-bottom: 3em;}
+#textlink{
+	color: #0000FF;
+	font-weight: 400;
+}
+
+#textlink:hover{
+		text-decoration: underline;
+}
+a{
+	color: #FFCC00;
+	-moz-transition: all .2s ease-in;
+	transition:all .2s ease-in;
+}
+a:hover{}
+a:link {text-decoration:none}
+a:visited {text-decoration:none}
+::selection
+{
+color:#0000FF;
+}
+::-moz-selection
+{
+color:#0000FF;
+}
