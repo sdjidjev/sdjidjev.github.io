@@ -47,11 +47,16 @@ a:visited {
 .content-container {
 	background-color: #70C1A6;
 	width: 82%;
-	height: auto;
 }
 
 .menu-content-container {
 	background-color: #A1D6B5;
+}
+
+.text-container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
 }
 
 .tag {
@@ -60,7 +65,7 @@ a:visited {
 	margin-bottom: 2%;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	margin-left: 22.5%;	
+	padding-left: 22.5%;	
 	background-color: #70C1A6;
 	text-align: center;
 }
@@ -74,10 +79,13 @@ a:visited {
 	background-color: #A1D6B5;
 }
 
+.contact-tag {
+	margin-bottom: 5%;
+}
+
 .text-tag {
 	font-family: 'Lato', sans-serif;
 	text-align: left;
-	padding: 0;
 }
 
 .description {
@@ -88,6 +96,14 @@ a:visited {
 
 .about-me {
 	text-indent: 2em;
+}
+
+.social-icon {
+	width: 40px;
+}
+
+.bottom-row {
+	margin-top: -12px;
 }
 
 .project-title {
@@ -154,4 +170,12 @@ nav {
 
 .nav-link.selected:hover {
 	color: #812C29;
+}
+
+.text-link {
+	color: #812C29;
+}
+
+.text-link:hover {
+	color: #A63935;
 }
