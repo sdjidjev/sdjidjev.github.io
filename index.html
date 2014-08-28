@@ -31,15 +31,29 @@
 				<div class="text-tag tag">
 					<div class="description">
 						<div class="project-title">
-		    				<a href="https://drive.google.com/file/d/0BzXTrCgoCjR1cEdUbVh5ZVpQYkE/edit?usp=sharing" class="project-heading" target="_blank">{{project.title}}</a>
+		    				<a href="{{project.url}}" class="project-heading" target="_blank">{{project.title}}</a>
 			    		</div>
 			    		<div class="project-picture-container">
-			    			<a href="https://drive.google.com/file/d/0BzXTrCgoCjR1cEdUbVh5ZVpQYkE/edit?usp=sharing" target="_blank"><img class="project-picture" src="img/cows.png"></a>
+			    			<a href="{{project.url}}" target="_blank"><img class="project-picture" v-attr="src:project.pic"></a>
 			    		</div>
-			    		<div class="text-container">
-			    			This was a hack done at Big Hack on April 2014. Big Hack is an annual hackathon where UC Berkeley and Stanford hackers compete against each other. A-maze-ing cows is a first-person shooter inside a maze with cows that drop from the sky who also try to attack you. This ridiculous game was made with Unreal Engine 4 using its programming flow language "Blueprint". Unreal Engine provided the physics engine, the cow .obj file was from online, and the rest of the logic was coded by my team. I worked on this hack with <a href = "http://www.fmeyer.com" class="text-link" target="_blank">Freddie Meyer</a>. I will be showing off this hack at the Cal Day Hackerfair.
+			    		<div v-partial="{{project.description}}" class="text-container">
 			    		</div>
 					</div> 
+				</div>
+			</div>
+		</script>
+		<script type="text/x-template" id="notfound-template">
+			<div class="content-container">
+				<div class="text-tag tag">
+					<div class="project-title project-heading">
+						404 - Page Not Found
+		    		</div>
+					<div v-style="background-position: bgX + 'px ' + bgY + 'px';" class="pic-404"></div>
+					<div class="description">
+						<div class="text-container" style="text-align:center;">
+							Nothin&rsquo; to see here!
+						</div>
+					</div>
 				</div>
 			</div>
 		</script>
