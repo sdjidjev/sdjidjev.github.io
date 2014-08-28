@@ -14,10 +14,12 @@ hr {
 h1 {
   	font-family: 'Lobster', cursive;
 	font-size: 2.5em;
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
-	-webkit-margin-start: 0em;
-	-webkit-margin-end: 0em;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-moz-margin-start: 0;
+	-moz-margin-end: 0;
 	margin-bottom: 10px;
 }
 
