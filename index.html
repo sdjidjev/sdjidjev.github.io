@@ -17,43 +17,19 @@
       	<meta property="og:image" content="http://i.imgur.com/v3fLk.jpg" />	
 	</head>
 	<body>
-		<script type="text/x-template" id="home-template">
-			<div class="content-container">
-				<div class="text-tag tag">
-					<div class="about-me description">
-						Hey there! I am currently a junior studying <b>Electrical Engineering &amp; Computer Science</b> at the <b>University of California, Berkeley</b>. I&lsquo;m originally from New Mexico and I worked at the <a href="http://www.lanl.gov" target="_blank">Los Alamos National Laboratory</a> during the Summer of 2013 and worked at <a href="http://www.eventable.com" target="_blank">Eventable</a> doing frontend developement during the Summer of 2014. My topics of interest in computer science include algorithm development and combinatorial optimization problems, although I participate in events by <a href="http://hackersatberkeley.com" target="_blank">Hackers@Berkeley</a> to improve my skills in developing apps and websites. I play the cello and piano, as well as tennis and ping-pong.
-					</div> 
-				</div>
-			</div>
-		</script>
-		<script type="text/x-template" id="projects-template">
-			<div v-repeat="project : projects" class="content-container">
+		<script type="text/x-template" id="content-template">
+			<div v-repeat="item : contentItems" class="content-container" v-show="item.show" v-effect="card-effect">
 				<div class="text-tag tag">
 					<div class="description">
-						<div class="project-title">
-		    				<a href="{{project.url}}" class="project-heading" target="_blank">{{project.title}}</a>
+						<div class="project-title" v-show="item.title">
+		    				<a href="{{item.url}}" class="project-heading" target="_blank">{{item.title}}</a>
 			    		</div>
-			    		<div class="project-picture-container">
-			    			<a href="{{project.url}}" target="_blank"><img class="project-picture" v-attr="src:project.pic"></a>
+			    		<div class="project-picture-container" v-show="item.pic">
+			    			<a href="{{item.url}}" target="_blank"><img class="project-picture" v-attr="src:item.pic"></a>
 			    		</div>
-			    		<div v-partial="{{project.description}}" class="text-container">
+			    		<div v-partial="{{item.description}}" class="text-container">
 			    		</div>
 					</div> 
-				</div>
-			</div>
-		</script>
-		<script type="text/x-template" id="notfound-template">
-			<div class="content-container">
-				<div class="text-tag tag">
-					<div class="project-title project-heading">
-						404 - Page Not Found
-		    		</div>
-					<div v-style="background-position: bgX + 'px ' + bgY + 'px';" class="pic-404"></div>
-					<div class="description">
-						<div class="text-container" style="text-align:center;">
-							Nothin&rsquo; to see here!
-						</div>
-					</div>
 				</div>
 			</div>
 		</script>
@@ -74,13 +50,13 @@
 			<div class="menu-content-container content-container">
 				<div class="menu-tag tag">
 					<nav>
-						<a v-class="selected : currentView == 'home'" class="nav-link selected" href="/#/">HOME</a>
-						<a v-class="selected : currentView == 'projects'" class="nav-link" href="/#/projects">PROJECTS</a>
-						<a v-class="selected : currentView == 'tidbits'" class="nav-link" href="/#/tidbits">TIDBITS</a>
+						<a v-class="selected : type == 'home'" class="nav-link selected" href="/#/">HOME</a>
+						<a v-class="selected : type == 'projects'" class="nav-link" href="/#/projects">PROJECTS</a>
+						<a v-class="selected : type == 'tidbits'" class="nav-link" href="/#/tidbits">TIDBITS</a>
 					</nav>
 				</div>
 			</div>
-			<div v-view="currentView"></div>
+			<div class="content-body" v-view="currentView"></div>
 			<div class="content-container">
 				<div class="contact-tag tag">
 					<div>
