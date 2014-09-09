@@ -34,7 +34,7 @@
 			</div>
 		</script>
 		<div id="app">
-			<div class="content-container">
+			<div class="content-container" v-if="first" v-transition>
 				<div class="name-tag tag">
 					<h1>
 						Stephanie Djidjev
@@ -47,7 +47,7 @@
 					</h4>
 				</div>
 			</div>
-			<div class="menu-content-container content-container">
+			<div class="menu-content-container content-container" v-if="first" v-transition>
 				<div class="menu-tag tag">
 					<nav>
 						<a v-class="selected : type == 'home'" class="nav-link selected" href="/#/">HOME</a>
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 			<div class="content-body" v-view="currentView"></div>
-			<div class="content-container">
+			<div class="content-container" v-if="first" v-transition>
 				<div class="contact-tag tag">
 					<div>
 						<a href="https://github.com/sdjidjev" target="_blank"><img class="social-icon" src="img/github-icon.png" data-toggle="tooltip" data-placement="top" title="Github"></a>

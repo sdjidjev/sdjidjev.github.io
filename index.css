@@ -56,6 +56,10 @@ a:visited {
     max-height: 800px;
 }
 
+.content-container.v-enter, .content-container.v-leave {
+    margin-left: -82%;
+}
+
 .content-container.v-enter-h  {
     max-height: 0;
     margin-bottom: 0;

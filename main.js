@@ -1,5 +1,5 @@
 function getRoute() {
-    var routes = ['home','projects'];   
+    var routes = ['home','projects','tidbits'];   
     var path = location.hash.replace(/^#\/?/, '') || 'home';
     if (routes.indexOf(path) > -1){
         return path;
@@ -111,12 +111,20 @@ Vue.component('content', {
                 description: 'ratemycat',
                 type: 'projects',
                 show: false
+            },
+            {
+                title: 'Rate My Cat',
+                url: 'http://ratemycat.herokuapp.com',
+                pic: '/img/pic.png',
+                description: 'ratemycat',
+                type: 'tidbits',
+                show: false
             }
         ]
     },
     created: function(){
         // simple routing
-        var routes = ['home','projects'];
+        var routes = ['home','projects','tidbits'];
         var interval;
 
         this.interval = setInterval(function(){
@@ -195,11 +203,16 @@ var app = new Vue({
     el: '#app',
     data: {
         currentView: 'content',
-        type: getRoute()
+        type: getRoute(),
+        first: false
+    },
+    created: function(){
+        this.first = true;
     }
 });
 
 window.addEventListener('hashchange', function() {
     var route = getRoute();
     app.type = route;
+    app.first = true;
 });
