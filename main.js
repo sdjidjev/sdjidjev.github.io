@@ -53,7 +53,10 @@ Vue.component('content', {
         pokepon: 'Pokepon is a multiplayer game that combines the battle elements of the Pokemon game with the dance and rhythm elements of Patapon (a game sort of like Dance Dance Revolution). Start a battle, send the link to your friends, and type the battle commands in time with the beat of a song on your Soundcloud playlist. This game won the Firebase API award at the PennApps Hackathon in September 2013. I worked on this with Thanh Hai Mai, Melanie Cebula, and Achal Dave. Pokepon uses HTML5, CSS, node.js, Express, Javascript, Firebase, and the Soundcloud API.',
         geoly: 'Geo.ly is a website where if you can\'t find your friends, click on "Create," send the generated link to your friend, and then you can see the location of you and your friend in real time! There is a compass which shows you in which direction your friend is. I worked on this with <a href="http://www.dchunwong.com" class="text-link" target="_blank"> Dylan Chun Wong</a> and <a href="http://www.melaniecebula.com" class="text-link" target="_blank">Melanie Cebula</a> at the <a href="https://www.hacksy.com/BigHack" class="text-link" target="_blank">Big Hack</a> on April 2013. It currently works only for iPhone, so we are working on making it available to most mobile platforms. We\'re also working on making it available publicly (i.e. it runs only on localhost now). geo.ly uses node.js, HTML5, CSS, Google Maps API, Python\'s SimpleHTTPServer, PhoneGap, and Webkit.',
         ratemycat: 'Rate My Cat is a website where users can upload pictures of their cat so that others can rate them. I worked on this with <a href="http://www.dchunwong.com" class="text-link"> Dylan Chun Wong</a> and <a href="http://www.melaniecebula.com" class="text-link">Melanie Cebula</a> at HackJam2 on February 2013. We\'re currently in the process of adding a rating feature. Rate My Cat uses HTML5, CSS, MongoDB, and Flask.',
-        notfound: '<div class="project-title project-heading">404 - Page Not Found</div><div v-style="background-position: bgX + \'px \' + bgY + \'px\';" class="pic-404"></div><div class="description"><div class="text-container" style="text-align:center;">Nothin&rsquo; to see here!</div></div>'
+        notfound: '<div class="project-title project-heading">404 - Page Not Found</div><div v-style="background-position: bgX + \'px \' + bgY + \'px\';" class="pic-404"></div><div class="description"><div class="text-container" style="text-align:center;">Nothin&rsquo; to see here!</div></div>',
+        threejs: 'On this page, I\'m going to be trying out cool things with ThreeJS. It will constantly be updating, so be sure to check back now and again!',
+        randompokemon: 'Random Pokemon will give you a random pokemon everytime you hit a button. This quick hack uses AngularJS, localStorage, HTML, Javascript, and a binary localStorage compressor called <a href="http://dungfu.github.io/SASStore/" class="textlink">SASStore</a>. This hack will be used for a <a href="http://hackersatberkeley.com" class="textlink">Hackers@Berkeley</a> workshop called "Intro to Javascript." Catch \'em all!',
+        duckclicker: 'Click the duck before it vanishes forever! This quick hack uses more AngularJS, as well as HTML and Javascript.'
     },
     data: {
         interval: null,
@@ -113,10 +116,26 @@ Vue.component('content', {
                 show: false
             },
             {
-                title: 'Rate My Cat',
-                url: 'http://ratemycat.herokuapp.com',
-                pic: '/img/pic.png',
-                description: 'ratemycat',
+                title: 'Crazy ThreeJS',
+                url: 'http://sdjidjev.com/threejs',
+                pic: '/img/threejs.png',
+                description: 'threejs',
+                type: 'tidbits',
+                show: false
+            },
+            {
+                title: 'Random Pokemon',
+                url: 'http://sdjidjev.com/randompokemon',
+                pic: '/img/randompokemon.png',
+                description: 'randompokemon',
+                type: 'tidbits',
+                show: false
+            },
+            {
+                title: 'Duck Clicker',
+                url: 'http://sdjidjev.com/duckclicker',
+                pic: '/img/duckclicker.png',
+                description: 'duckclicker',
                 type: 'tidbits',
                 show: false
             }
@@ -179,7 +198,7 @@ Vue.component('content', {
             if (turnedOffVar) {
                 timeout = setTimeout(function(){
                     turnOffOnElements.call(this,true_arr);
-                }.bind(this),1000);
+                }.bind(this),500);
             } else {
                 turnOffOnElements.call(this,true_arr);
             }
