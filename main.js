@@ -48,7 +48,7 @@ Vue.component('content', {
     template: "#content-template",
     partials: {
         home: 'Hey there! I am currently a junior studying <b>Electrical Engineering &amp; Computer Science</b> at the <b>University of California, Berkeley</b>. I&lsquo;m originally from New Mexico and I worked at the <a href="http://www.lanl.gov" class="text-link" target="_blank">Los Alamos National Laboratory</a> doing research during the Summer of 2013 and worked at <a href="http://www.eventable.com" class="text-link" target="_blank">Eventable</a> doing frontend developement during the Summer of 2014. I love web development and I am an officer at <a href="http://hackersatberkeley.com" class="text-link" target="_blank">Hackers@Berkeley</a> in order to contribute to the growing hacking culture at UC Berkeley. I play the cello and piano, as well as tennis and ping-pong.',
-        cows: 'This was a hack done at Big Hack on April 2014. Big Hack is an annual hackathon where UC Berkeley and Stanford hackers compete against each other. A-maze-ing cows is a first-person shooter inside a maze with cows that drop from the sky who also try to attack you. This ridiculous game was made with Unreal Engine 4 using its programming flow language "Blueprint". Unreal Engine provided the physics engine, the cow .obj file was from online, and the rest of the logic was coded by my team. I worked on this hack with <a href = "http://www.fmeyer.com" class="text-link" target="_blank">Freddie Meyer</a>. I will be showing off this hack at the Cal Day Hackerfair.',
+        cows: 'This was a hack done at Big Hack on April 2014. Big Hack is an annual hackathon where UC Berkeley and Stanford hackers compete against each other. A-maze-ing cows is a first-person shooter inside a maze with cows that drop from the sky who also try to attack you. This ridiculous game was made with Unreal Engine 4 using its programming flow language "Blueprint". Unreal Engine provided the physics engine, the cow .obj file was from online, and the rest of the logic was coded by my team. I worked on this hack with <a href = "http://www.fmeyer.com" class="text-link" target="_blank">Freddie Meyer</a>. I will be showing off this hack at the Cal Day Hackerfair. You can download it for Windows <a href="https://drive.google.com/file/d/0BzXTrCgoCjR1cEdUbVh5ZVpQYkE/edit?usp=sharing" class="text-link">here</a>, and you launch it by clicking \'launcher.cmd\'',
         cards: 'This was a quick hack done at BearHack on November 2013. I wanted to get familiar with Facebook\'s API, so I made an app that tests you on the names of the people on your friends list on Facebook. It shows you the profile picture of your Facebook friend and asks you for their first and last name. If you don\'t know their name, the app gives you a link so that you can unfriend them. This hack uses basic HTML+CSS, Javascript, and the Facebook API.',
         pokepon: 'Pokepon is a multiplayer game that combines the battle elements of the Pokemon game with the dance and rhythm elements of Patapon (a game sort of like Dance Dance Revolution). Start a battle, send the link to your friends, and type the battle commands in time with the beat of a song on your Soundcloud playlist. This game won the Firebase API award at the PennApps Hackathon in September 2013. I worked on this with Thanh Hai Mai, Melanie Cebula, and Achal Dave. Pokepon uses HTML5, CSS, node.js, Express, Javascript, Firebase, and the Soundcloud API.',
         geoly: 'Geo.ly is a website where if you can\'t find your friends, click on "Create," send the generated link to your friend, and then you can see the location of you and your friend in real time! There is a compass which shows you in which direction your friend is. I worked on this with <a href="http://www.dchunwong.com" class="text-link" target="_blank"> Dylan Chun Wong</a> and <a href="http://www.melaniecebula.com" class="text-link" target="_blank">Melanie Cebula</a> at the <a href="https://www.hacksy.com/BigHack" class="text-link" target="_blank">Big Hack</a> on April 2013. It currently works only for iPhone, so we are working on making it available to most mobile platforms. We\'re also working on making it available publicly (i.e. it runs only on localhost now). geo.ly uses node.js, HTML5, CSS, Google Maps API, Python\'s SimpleHTTPServer, PhoneGap, and Webkit.',
@@ -56,7 +56,9 @@ Vue.component('content', {
         notfound: '<div class="project-title project-heading">404 - Page Not Found</div><div v-style="background-position: bgX + \'px \' + bgY + \'px\';" class="pic-404"></div><div class="description"><div class="text-container" style="text-align:center;">Nothin&rsquo; to see here!</div></div>',
         threejs: 'On this page, I\'m going to be trying out cool things with ThreeJS. It will constantly be updating, so be sure to check back now and again!',
         randompokemon: 'Random Pokemon will give you a random pokemon everytime you hit a button. This quick hack uses AngularJS, localStorage, HTML, Javascript, and a binary localStorage compressor called <a href="http://dungfu.github.io/SASStore/" class="textlink">SASStore</a>. This hack will be used for a <a href="http://hackersatberkeley.com" class="textlink">Hackers@Berkeley</a> workshop called "Intro to Javascript." Catch \'em all!',
-        duckclicker: 'Click the duck before it vanishes forever! This quick hack uses more AngularJS, as well as HTML and Javascript.'
+        duckclicker: 'Click the duck before it vanishes forever! This quick hack uses more AngularJS, as well as HTML and Javascript.',
+        ocd: 'This was a <a href="http://challenge.nm.org" class="text-link">Supercomputing Challenge</a> project that I worked on my senior year of high school. My team (Alexandra Porter and Lauren Li) and I developed an algorithm which uses characteristics of both the Power Iteration and Ant Colony optimzation techniques in order to find communities in networks with maximum modularity. This novel algorithm proved to run faster and with more accuracy than traditionally used algorithms for most cases. Read our <a href="http://challenge.nm.org/archive/11-12/finalreports/56.pdf" class="text-link">report</a> for more information. This project won 3rd place in the Supercomputing Challenge. The algorithms and the visualization were coded in Java.',
+        aco: 'This was a <a href="http://challenge.nm.org" class="text-link">Supercomputing Challenge</a> project that I worked on my junior year of high school. My team (Peter Ahrens and Dustin Tauxe) and I analyzed the performance of different implementations of Ant Colony Optimizations as applied to the Travelling Salesman Problem. Ant Colony Optimziations are interesting because they use real life ant behavior in order to find a very good solution to the problem in a small amount of time. Read our <a href="http://challenge.nm.org/archive/10-11/finalreports/56.pdf" class="text-link">report</a> for more information. This project won 2nd place in the Supercomputing Challenge. Python was used for the algorithm and the visualization.'
     },
     data: {
         interval: null,
@@ -112,6 +114,22 @@ Vue.component('content', {
                 url: 'http://ratemycat.herokuapp.com',
                 pic: '/img/pic.png',
                 description: 'ratemycat',
+                type: 'projects',
+                show: false
+            },
+            {
+                title: 'Optimizing Community Detection',
+                url: 'http://challenge.nm.org/archive/11-12/finalreports/56.pdf',
+                pic: '/img/ocdpic.png',
+                description: 'ocd',
+                type: 'projects',
+                show: false
+            },
+            {
+                title: 'BrilliAnts',
+                url: 'http://challenge.nm.org/archive/10-11/finalreports/56.pdf',
+                pic: '/img/acopic.png',
+                description: 'aco',
                 type: 'projects',
                 show: false
             },
