@@ -58,7 +58,8 @@ Vue.component('content', {
         randompokemon: 'Random Pokemon will give you a random pokemon everytime you hit a button. This quick hack uses AngularJS, localStorage, HTML, Javascript, and a binary localStorage compressor called <a href="http://dungfu.github.io/SASStore/" class="textlink">SASStore</a>. This hack will be used for a <a href="http://hackersatberkeley.com" class="textlink">Hackers@Berkeley</a> workshop called "Intro to Javascript." Catch \'em all!',
         duckclicker: 'Click the duck before it vanishes forever! This quick hack uses more AngularJS, as well as HTML and Javascript.',
         ocd: 'This was a <a href="http://challenge.nm.org" class="text-link">Supercomputing Challenge</a> project that I worked on my senior year of high school. My team (Alexandra Porter and Lauren Li) and I developed an algorithm which uses characteristics of both the Power Iteration and Ant Colony optimzation techniques in order to find communities in networks with maximum modularity. This novel algorithm proved to run faster and with more accuracy than traditionally used algorithms for most cases. Read our <a href="http://challenge.nm.org/archive/11-12/finalreports/56.pdf" class="text-link">report</a> for more information. This project won 3rd place in the Supercomputing Challenge. The algorithms and the visualization were coded in Java.',
-        aco: 'This was a <a href="http://challenge.nm.org" class="text-link">Supercomputing Challenge</a> project that I worked on my junior year of high school. My team (Peter Ahrens and Dustin Tauxe) and I analyzed the performance of different implementations of Ant Colony Optimizations as applied to the Travelling Salesman Problem. Ant Colony Optimziations are interesting because they use real life ant behavior in order to find a very good solution to the problem in a small amount of time. Read our <a href="http://challenge.nm.org/archive/10-11/finalreports/56.pdf" class="text-link">report</a> for more information. This project won 2nd place in the Supercomputing Challenge. Python was used for the algorithm and the visualization.'
+        aco: 'This was a <a href="http://challenge.nm.org" class="text-link">Supercomputing Challenge</a> project that I worked on my junior year of high school. My team (Peter Ahrens and Dustin Tauxe) and I analyzed the performance of different implementations of Ant Colony Optimizations as applied to the Travelling Salesman Problem. Ant Colony Optimziations are interesting because they use real life ant behavior in order to find a very good solution to the problem in a small amount of time. Read our <a href="http://challenge.nm.org/archive/10-11/finalreports/56.pdf" class="text-link">report</a> for more information. This project won 2nd place in the Supercomputing Challenge. Python was used for the algorithm and the visualization.',
+        setchecker: '"Set" is a popular card game that involves finding patterns under time pressure. Sometimes, it\'s hard to tell whether or not one of these patterns exists, which is why I built this "set" checker. More detailed rules of "Set" can be found <a href="http://en.wikipedia.org/wiki/Set_(game)" class="text-link">here</a>.'
     },
     data: {
         interval: null,
@@ -131,6 +132,14 @@ Vue.component('content', {
                 pic: '/img/acopic.png',
                 description: 'aco',
                 type: 'projects',
+                show: false
+            },
+            {
+                title: 'Set Checker',
+                url: 'http://sdjidjev.com/set-checker',
+                pic: '/img/setchecker.png',
+                description: 'setchecker',
+                type: 'tidbits',
                 show: false
             },
             {
